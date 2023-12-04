@@ -16,10 +16,10 @@ APPROVED_JOBS = [
 ]
 
 class Person:
-    def __init__(self, name="John Doe", job="Sales"):
+    def __init__(self, name = "John Doe", job = "Sales"):
         self.name = name
         self.job = job
-
+        
     def get_name(self):
         return self._name
     
@@ -28,9 +28,9 @@ class Person:
             self._name = name.title()
         else:
             print("Name must be string between 1 and 25 characters.")
-    
+            
     name = property(get_name, set_name)
-
+    
     def get_job(self):
         return self._job
     
